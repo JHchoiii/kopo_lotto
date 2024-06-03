@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>동행 복권</title>
+    <style>
+      body {
+        /* body의 내용을 가운데 정렬 */
+        text-align: center;
+      }
+      input {
+        /* 입력 버튼의 스타일 */
+        margin-left: 15px;
+        color: rgb(245, 245, 245);
+        background: #000;
+        font-size: 1.5rem;
+      }
+      p {
+        /* p태그의 스타일 */
+        font-size: 2rem;
+        color: rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 복권 정보를 담는 컨테이너 -->
+    <div class="container">
+      <!-- 복권 제목, 내용을 조금 더 중앙으로 옮기기 위한 padding  -->
+      <h1 style="padding-top: 200px">1116회차 당첨 번호</h1>
+      <!-- 뽑기 버튼 -->
+      <div>
+        <input id="buttonId" type="button" value="뽑기" />
+      </div>
+      <!-- 결과 출력 영역 -->
+      <div>
+        <p id="result1"></p>
+      </div>
+    </div>
+    <!-- JavaScript 파일 로드 -->
+    <script src="./js/numbers.js"></script>
+    <script src="./js/app.js" defer></script>
+  </body>
+</html>
